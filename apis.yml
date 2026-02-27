@@ -1,0 +1,115 @@
+name: Microsoft Office APIs
+description: Collection of APIs for Microsoft Office products and services
+image: https://www.microsoft.com/favicon.ico
+url: https://www.microsoft.com/en-us/microsoft-365
+created: '2024-01-15'
+modified: '2024-01-15'
+tags:
+- Office
+- Productivity
+- Documents
+- Collaboration
+- Microsoft
+apis:
+- name: Microsoft Graph API
+  description: Unified API endpoint for accessing Microsoft 365 services including Office applications
+  image: https://docs.microsoft.com/favicon.ico
+  humanUrl: https://developer.microsoft.com/en-us/graph
+  baseUrl: https://graph.microsoft.com/v1.0
+  tags:
+  - Graph
+  - Microsoft 365
+  - Integration
+  properties:
+  - type: Documentation
+    url: https://docs.microsoft.com/en-us/graph/overview
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-openapi/master/openapi/v1.0/openapi.yaml
+  - type: Authentication
+    url: https://docs.microsoft.com/en-us/graph/auth/
+  - type: SDKs
+    url: https://docs.microsoft.com/en-us/graph/sdks/sdks-overview
+- name: Office Scripts API
+  description: API for automating tasks in Excel on the web
+  humanUrl: https://docs.microsoft.com/en-us/office/dev/scripts/
+  baseUrl: https://graph.microsoft.com/v1.0
+  tags:
+  - Excel
+  - Automation
+  - Scripts
+  properties:
+  - type: Documentation
+    url: https://docs.microsoft.com/en-us/office/dev/scripts/overview/excel
+  - type: Tutorials
+    url: https://docs.microsoft.com/en-us/office/dev/scripts/tutorials/excel-tutorial
+- name: Office Add-ins API
+  description: JavaScript API for building add-ins for Word, Excel, PowerPoint, and Outlook
+  humanUrl: https://docs.microsoft.com/en-us/office/dev/add-ins/
+  baseUrl: https://appsforoffice.microsoft.com
+  tags:
+  - Add-ins
+  - Extensions
+  - JavaScript
+  properties:
+  - type: Documentation
+    url: https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins
+  - type: API Reference
+    url: https://docs.microsoft.com/en-us/javascript/api/overview
+  - type: Samples
+    url: https://github.com/OfficeDev/Office-Add-in-samples
+- name: OneDrive API
+  description: REST API for accessing and managing files in OneDrive
+  humanUrl: https://docs.microsoft.com/en-us/onedrive/developer/
+  baseUrl: https://graph.microsoft.com/v1.0/me/drive
+  tags:
+  - Storage
+  - Files
+  - Cloud
+  properties:
+  - type: Documentation
+    url: https://docs.microsoft.com/en-us/onedrive/developer/rest-api/
+  - type: API Reference
+    url: https://docs.microsoft.com/en-us/graph/api/resources/onedrive
+  - type: SDKs
+    url: https://docs.microsoft.com/en-us/onedrive/developer/sdks/
+- name: SharePoint REST API
+  description: API for accessing SharePoint sites, lists, and documents
+  humanUrl: https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/
+  baseUrl: https://graph.microsoft.com/v1.0/sites
+  tags:
+  - SharePoint
+  - Collaboration
+  - Content Management
+  properties:
+  - type: Documentation
+    url: https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service
+  - type: API Reference
+    url: https://docs.microsoft.com/en-us/graph/api/resources/sharepoint
+- name: Outlook Mail API
+  description: API for accessing and managing email, calendar, and contacts
+  humanUrl: https://docs.microsoft.com/en-us/outlook/rest/
+  baseUrl: https://graph.microsoft.com/v1.0/me
+  tags:
+  - Email
+  - Calendar
+  - Contacts
+  properties:
+  - type: Documentation
+    url: https://docs.microsoft.com/en-us/graph/outlook-overview
+  - type: API Reference
+    url: https://docs.microsoft.com/en-us/graph/api/resources/mail-api-overview
+common:
+- type: Portal
+  url: https://developer.microsoft.com/
+- type: Authentication
+  url: https://docs.microsoft.com/en-us/azure/active-directory/develop/
+- type: Status
+  url: https://status.office.com/
+- type: Terms of Service
+  url: https://www.microsoft.com/en-us/legal/terms-of-use
+- type: Privacy Policy
+  url: https://privacy.microsoft.com/
+maintainers:
+- name: Microsoft
+  email: support@microsoft.com
+  url: https://www.microsoft.com

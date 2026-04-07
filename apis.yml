@@ -9,29 +9,27 @@ created: '2024-01-15'
 modified: '2026-03-16'
 specificationVersion: '0.19'
 tags:
+  - Collaboration
+  - Documents
+  - Microsoft
   - Office
   - Productivity
-  - Documents
-  - Collaboration
-  - Microsoft
 apis:
   - name: Microsoft Graph API
     description: >-
       Unified API endpoint for accessing Microsoft 365 services including Office applications.
-    image: 
-      https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://developer.microsoft.com/en-us/graph
     baseURL: https://graph.microsoft.com/v1.0
     tags:
       - Graph
-      - Microsoft 365
       - Integration
+      - Microsoft 365
     properties:
       - type: Documentation
         url: https://docs.microsoft.com/en-us/graph/overview
       - type: OpenAPI
-        url: 
-          https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-openapi/master/openapi/v1.0/openapi.yaml
+        url: https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-openapi/master/openapi/v1.0/openapi.yaml
       - type: Authentication
         url: https://docs.microsoft.com/en-us/graph/auth/
   - name: Office Add-ins API
@@ -40,13 +38,12 @@ apis:
     humanURL: https://docs.microsoft.com/en-us/office/dev/add-ins/
     baseURL: https://appsforoffice.microsoft.com
     tags:
-      - Add-ins
+      - Add-Ins
       - Extensions
       - JavaScript
     properties:
       - type: Documentation
-        url: 
-          https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins
+        url: https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins
       - type: Reference
         url: https://docs.microsoft.com/en-us/javascript/api/overview
 common:

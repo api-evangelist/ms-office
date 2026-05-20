@@ -47,6 +47,8 @@ apis:
       - type: Reference
         url: https://docs.microsoft.com/en-us/javascript/api/overview
 common:
+  - type: GitHubOrganization
+    url: https://github.com/microsoft
   - type: Portal
     url: https://developer.microsoft.com/
   - type: Authentication

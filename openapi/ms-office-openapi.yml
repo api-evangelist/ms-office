@@ -1,0 +1,85 @@
+openapi: 3.1.0
+info:
+  title: Microsoft Graph API (Office)
+  description: |
+    Microsoft Graph REST API endpoints covering Office productivity scenarios:
+    user profile, mail, calendar events, OneDrive files, and Microsoft 365 groups.
+    Authentication uses the Microsoft identity platform (OAuth 2.0) with a bearer
+    access token.
+  version: "1.0"
+  contact:
+    name: Microsoft Graph
+    url: https://developer.microsoft.com/graph
+  license:
+    name: Microsoft APIs Terms of Use
+    url: https://learn.microsoft.com/en-us/legal/microsoft-apis/terms-of-use
+servers:
+  - url: https://graph.microsoft.com/v1.0
+    description: Microsoft Graph v1.0
+security:
+  - oauth2: []
+paths:
+  /me:
+    get:
+      operationId: getMyProfile
+      summary: Get the signed-in user profile
+      responses:
+        '200':
+          description: User profile
+  /me/messages:
+    get:
+      operationId: listMyMessages
+      summary: List the signed-in user's mail messages
+      responses:
+        '200':
+          description: Collection of messages
+  /me/events:
+    get:
+      operationId: listMyCalendarEvents
+      summary: List the signed-in user's calendar events
+      responses:
+        '200':
+          description: Collection of events
+  /me/drive/root/children:
+    get:
+      operationId: listMyDriveRootChildren
+      summary: List items in the root of the user's drive
+      responses:
+        '200':
+          description: Collection of driveItems
+  /me/onenote/notebooks:
+    get:
+      operationId: listMyNotebooks
+      summary: List the signed-in user's OneNote notebooks
+      responses:
+        '200':
+          description: Collection of notebooks
+  /groups:
+    get:
+      operationId: listGroups
+      summary: List groups in the organization
+      responses:
+        '200':
+          description: Collection of groups
+  /users:
+    get:
+      operationId: listUsers
+      summary: List users in the organization
+      responses:
+        '200':
+          description: Collection of users
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      description: Microsoft identity platform OAuth 2.0
+      flows:
+        authorizationCode:
+          authorizationUrl: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+          tokenUrl: https://login.microsoftonline.com/common/oauth2/v2.0/token
+          scopes:
+            User.Read: Sign in and read user profile
+            Mail.Read: Read user mail
+            Files.Read: Read user files
+            Calendars.Read: Read user calendars
+            Notes.Read: Read user OneNote notebooks

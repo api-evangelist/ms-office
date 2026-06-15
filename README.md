@@ -2,7 +2,7 @@
 
 Collection of APIs for Microsoft Office products and services.
 
-**URL:** [Visit APIs.json URL](https://www.microsoft.com/en-us/microsoft-365)
+**APIs.json:** [https://www.microsoft.com/en-us/microsoft-365](https://www.microsoft.com/en-us/microsoft-365)
 
 ## Scope
 
@@ -27,9 +27,8 @@ Collection of APIs for Microsoft Office products and services.
 
 Unified API endpoint for accessing Microsoft 365 services including Office applications.
 
-**Human URL:** [https://developer.microsoft.com/en-us/graph](https://developer.microsoft.com/en-us/graph)
-
-**Base URL:** https://graph.microsoft.com/v1.0
+- **Human URL:** [https://developer.microsoft.com/en-us/graph](https://developer.microsoft.com/en-us/graph)
+- **Base URL:** `https://graph.microsoft.com/v1.0`
 
 #### Tags
 
@@ -40,16 +39,17 @@ Unified API endpoint for accessing Microsoft 365 services including Office appli
 #### Properties
 
 - [Documentation](https://docs.microsoft.com/en-us/graph/overview)
-- [OpenAPI](https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-openapi/master/openapi/v1.0/openapi.yaml)
+- [OpenAPI](https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-openapi/master/openapi/v1.0/openapi.yaml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
 - [Authentication](https://docs.microsoft.com/en-us/graph/auth/)
+- [Postman Collection](collections/ms-office.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/ms-office.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Office Add-ins API
 
 JavaScript API for building add-ins for Word, Excel, PowerPoint, and Outlook.
 
-**Human URL:** [https://docs.microsoft.com/en-us/office/dev/add-ins/](https://docs.microsoft.com/en-us/office/dev/add-ins/)
-
-**Base URL:** https://appsforoffice.microsoft.com
+- **Human URL:** [https://docs.microsoft.com/en-us/office/dev/add-ins/](https://docs.microsoft.com/en-us/office/dev/add-ins/)
+- **Base URL:** `https://appsforoffice.microsoft.com`
 
 #### Tags
 
@@ -61,17 +61,20 @@ JavaScript API for building add-ins for Word, Excel, PowerPoint, and Outlook.
 
 - [Documentation](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins)
 - [Reference](https://docs.microsoft.com/en-us/javascript/api/overview)
+- [Postman Collection](collections/ms-office.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/ms-office.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ## Common Properties
 
+- [GitHub Organization](https://github.com/microsoft)
 - [Portal](https://developer.microsoft.com/)
 - [Authentication](https://docs.microsoft.com/en-us/azure/active-directory/develop/)
-- [Status](https://status.office.com/)
+- [Status Page](https://status.office.com/)
 - [Terms of Service](https://www.microsoft.com/en-us/legal/terms-of-use)
 - [Privacy Policy](https://privacy.microsoft.com/)
+- [Integrations](https://www.microsoft.com/en-us/marketplace)
 
 ## Maintainers
 
 **FN:** Kin Lane
-
 **Email:** kin@apievangelist.com

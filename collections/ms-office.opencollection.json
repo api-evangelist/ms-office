@@ -1,0 +1,99 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Microsoft Graph API (Office)",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "authorization_code",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+      "accessTokenUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Get the signed-in user profile",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://graph.microsoft.com/v1.0/me"
+      },
+      "docs": "Get the signed-in user profile"
+    },
+    {
+      "info": {
+        "name": "List the signed-in user's mail messages",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://graph.microsoft.com/v1.0/me/messages"
+      },
+      "docs": "List the signed-in user's mail messages"
+    },
+    {
+      "info": {
+        "name": "List the signed-in user's calendar events",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://graph.microsoft.com/v1.0/me/events"
+      },
+      "docs": "List the signed-in user's calendar events"
+    },
+    {
+      "info": {
+        "name": "List items in the root of the user's drive",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://graph.microsoft.com/v1.0/me/drive/root/children"
+      },
+      "docs": "List items in the root of the user's drive"
+    },
+    {
+      "info": {
+        "name": "List the signed-in user's OneNote notebooks",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://graph.microsoft.com/v1.0/me/onenote/notebooks"
+      },
+      "docs": "List the signed-in user's OneNote notebooks"
+    },
+    {
+      "info": {
+        "name": "List groups in the organization",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://graph.microsoft.com/v1.0/groups"
+      },
+      "docs": "List groups in the organization"
+    },
+    {
+      "info": {
+        "name": "List users in the organization",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://graph.microsoft.com/v1.0/users"
+      },
+      "docs": "List users in the organization"
+    }
+  ],
+  "bundled": true
+}

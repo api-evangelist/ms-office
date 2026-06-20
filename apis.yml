@@ -3,7 +3,7 @@ name: Microsoft Office APIs
 description: >-
   Collection of APIs for Microsoft Office products and services.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://www.microsoft.com/en-us/microsoft-365
 created: '2024-01-15'
 modified: '2026-04-28'
@@ -18,7 +18,7 @@ apis:
   - name: Microsoft Graph API
     description: >-
       Unified API endpoint for accessing Microsoft 365 services including Office applications.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.microsoft.com/en-us/graph
     baseURL: https://graph.microsoft.com/v1.0
     tags:

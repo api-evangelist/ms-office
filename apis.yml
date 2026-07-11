@@ -47,6 +47,12 @@ apis:
       - type: Reference
         url: https://docs.microsoft.com/en-us/javascript/api/overview
 common:
+  - type: VulnerabilityDisclosure
+    url: security/ms-office-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/ms-office-domain-security.yml
+  - type: Authentication
+    url: authentication/ms-office-authentication.yml
   - type: OAuthScopes
     url: scopes/ms-office-scopes.yml
   - url: https://devblogs.microsoft.com/microsoft365dev/feed/

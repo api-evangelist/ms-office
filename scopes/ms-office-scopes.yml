@@ -1,0 +1,42 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/ms-office-openapi.yml
+schemes:
+- name: oauth2
+  source: openapi/ms-office-openapi.yml
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+    tokenUrl: https://login.microsoftonline.com/common/oauth2/v2.0/token
+  description: Microsoft identity platform OAuth 2.0
+scopes:
+- scope: Calendars.Read
+  description: Read user calendars
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/ms-office-openapi.yml
+- scope: Files.Read
+  description: Read user files
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/ms-office-openapi.yml
+- scope: Mail.Read
+  description: Read user mail
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/ms-office-openapi.yml
+- scope: Notes.Read
+  description: Read user OneNote notebooks
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/ms-office-openapi.yml
+- scope: User.Read
+  description: Sign in and read user profile
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/ms-office-openapi.yml

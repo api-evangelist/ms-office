@@ -47,6 +47,10 @@ apis:
       - type: Reference
         url: https://docs.microsoft.com/en-us/javascript/api/overview
 common:
+  - type: OAuthScopes
+    url: scopes/ms-office-scopes.yml
+  - url: https://devblogs.microsoft.com/microsoft365dev/feed/
+    type: Blog
   - type: GitHubOrganization
     url: https://github.com/microsoft
   - type: Portal

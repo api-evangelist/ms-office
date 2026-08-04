@@ -1,0 +1,18 @@
+{
+  "provider": "ms-office",
+  "sources": [
+    "ms-office-groups-api-openapi.yml",
+    "ms-office-me-api-openapi.yml",
+    "ms-office-users-api-openapi.yml"
+  ],
+  "outputs": [
+    "ms-office-groups-api-openapi.yml",
+    "ms-office-me-api-openapi.yml",
+    "ms-office-users-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

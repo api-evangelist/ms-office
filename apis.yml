@@ -47,6 +47,8 @@ apis:
   humanURL: https://developer.microsoft.com/en-us/graph
   baseURL: https://graph.microsoft.com/v1.0
   tags:
+  - Group
+  tags_raw:
   - Groups
   properties:
   - type: OpenAPI
@@ -75,6 +77,8 @@ apis:
   humanURL: https://developer.microsoft.com/en-us/graph
   baseURL: https://graph.microsoft.com/v1.0
   tags:
+  - User
+  tags_raw:
   - Users
   properties:
   - type: OpenAPI
